@@ -1,0 +1,970 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+
+  <meta http-equiv="Pragma" CONTENT="no-cache">
+
+  <title>CS 421 (Fall 2026): Lectures</title>
+  <link rel="shortcut icon" href="../lambda.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../default.css" type="text/css"
+        media="all">
+</head>
+
+<body>
+
+  <table border="0" width="100%" cellpadding="3">
+    <tr>
+      <td>
+        <table class="title" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center" class="title">
+              <big class="title">CS 421: Programming Languages and Compilers</big>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="nav" align="center">
+                  <a href="../index.php">main</a>
+                    &nbsp;::&nbsp;
+                  <a href="../policy.html">policy</a>
+                    &nbsp;::&nbsp;
+		                lectures
+                    &nbsp;::&nbsp;
+<!--
+                  <a href="../mps/index.html">mps</a>
+                    &nbsp;::&nbsp;
+-->
+                  <a href="../mps.html">mps</a>
+                    &nbsp;::&nbsp;
+                  <a href="../exams/index.html">exams</a>
+                    &nbsp;::&nbsp;
+                  <a href="../project.html">unit project</a>
+                    &nbsp;::&nbsp;
+                  <a href="../resources/index.html">resources</a>
+                    &nbsp;::&nbsp;
+                  <a href="../faq.html">faq</a>
+            </td>
+
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <table border="0" width="100%" cellspacing="0" cellpadding="6">
+    <tr valign="top">
+
+  <td width="100%">
+
+<table border="0" class="module" width="100%" cellspacing="0" cellpadding="4">
+  <tr>
+    <th class="module_link" align=left>
+<a href="https://courses.engr.illinois.edu/cs421/fa2025/lectures/">
+  Lecture slides from Fall 2025
+</a><br/>
+<a href="https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652">
+  Videos of class lectures (Channel CS 421 - FALL 2026)
+</a>
+<br></th>
+  </tr>
+  <tr>
+    <th class="module_title">Lecture Schedule for Fall 2026</th>
+  </tr>
+  <tr>
+    <td>
+
+    <table class=schedule border=0 cellpadding=2 cellspacing=5 rules=all width="100%">
+
+      <tr><th colspan=7><b>
+            Schedule subject to change as course progresses.
+      </b></th></tr>
+      <tr><th colspan=7><b>
+            Lecture slides for lectures not yet given are preliminary,
+            and may change.
+      </b></th></tr>
+<tr>
+  <th>Day</th>
+  <th align=left> Date </th>
+  <th align=left> Topic </th>
+  <th align=left> Slides and Code </th>
+  <th align=left> Videos </th>
+  <th align=left> Asmt Given </th>
+  <th align=left> Asmt Due </th>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 1 &nbsp;</th></tr>
+
+<!-- Day 1, Week 1 -->
+<tr><td align=right>1</td><th align=right>Aug 25</th>  <!-- From here --
+                                -- down alecture dates need to be one
+                                day earlier. -->
+  <td>Course Introduction, Introduction to Ocaml, Environments</td>
+  <td>
+    slides <a href="01-02-intro.ppt">(PPT)</a>
+             <a href="01-02-intro.pdf">(full sized PDF)</a>
+             <a href="01-02-intro-2x3.pdf">(6 up PDF)</a>
+<p>
+    code <a href="ocaml-intro.ml">(OCaml CODE)</a>
+         <a href="ocaml-intro-shell.txt">(SHELL)</a>
+</p>
+<!--
+<p>
+extra material <a href="01-intro-extras.ppt">(PPT)</a>
+             <a href="01-intro-extras.pdf">(full sized PDF)</a>
+             <a href="01-intro-extras-2x3.pdf">(6 up PDF)</a>
+</p>
+-->
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 1
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+       MP1: OCaml: Basic Ocaml
+    </a>
+  </td>
+  <td></td>
+  </tr>
+
+<!-- Day 2 -->
+<tr><td align=right>2</td><th align=right>Aug 28 </th>
+  <td>Ocaml Boolean, Tuples, Functions, Closures </td>
+  <td>
+  slides continued from Lecture 1
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 2
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA1: Evaluation and Evironments
+    </a>
+  </td>
+  <td></td>
+  </tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 2 &nbsp;</th></tr>
+
+<!-- Day 3, Week 2 -->
+<!-- MP2: Recursion and List Pattern Matching -->
+<tr><td align=right>3</td><th align=right>Sep 2</th>
+  <td>Closures and Evaluation of Function Application, Order of Evaluation in OCaml</td>
+<td>
+    slides
+     <a href="03-04-tuples-basic-recursion-evaluation.ppt">(PPT)</a>
+             <a href="03-04-tuples-basic-recursion-evaluation.pdf">(full sized PDF)</a>
+             <a href="03-04-tuples-basic-recursion-evaluation-2x3.pdf">(6 up PDF)</a>
+</td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 3
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP2: Pattern Matching and Recursion
+    </a>
+  </td>
+  <td>MP1</td>
+  </tr>
+
+<!--Day 4 -->
+<tr><td align=right>4</td><th align=right>Sep 4</th>
+<td>Higher-Order Functions, Pattern Matching and Recursion over Lists</td>
+<td>
+    slides continued from Lecture 3
+</td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 4
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA2: Evaluating the Application of a Function
+    </a>
+  </td>
+  <td>WA1</td>
+  </tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 3 &nbsp;</th></tr>
+
+<!--Day 5, Week 3 -->
+<tr><td align=right>5</td><th align=right>Sep 9</th>
+<td>Lists, List Pattern Matching, Recursion over Lists, Structural Recursion</td>
+  <td>
+    
+     <a href="05-06-ocaml-lists-HOF.ppt">(PPT)</a>
+             <a href="05-06-ocaml-lists-HOF.pdf">(full sized PDF)</a>
+             <a href="05-06-ocaml-lists-HOF-2x3.pdf">(6 up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 5
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP3: Patterns of Recursion, Higher-order Functions
+    </a>
+  </td>
+  <td></tr>
+</tr>
+
+<!--Day 6 -->
+<tr><td align=right>6</td><th align=right>Sep 11</th>
+ <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          Quiz 1 on MP2
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="background-color:#90A0A0">MP2</td>
+</tr>
+<tr><td align=right>6</td><th align=right>Sep 11</th>
+   <td>Forms of Recursion and Higher-Order Recursive Operators</td>
+  <td>
+slides continued from Lecture 5
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 6
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA3XC: Order of Evaluation </a></td>
+    <td>WA2 </td>
+  </tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 4 &nbsp;</th></tr>
+
+<!-- Day 7 -->
+<!-- MP4: Implementing CPS Transformation using User Defined Data Types -->
+
+<tr><td align=right>7</td><th align=right>Sep 16</th>
+  <td>Continuations and Continutation Passing Style</td>
+  <td>
+    slides <a href="07-08-HOF-CPS.pptx">(PPT)</a>
+             <a href="07-08-HOF-CPS.pdf">(full sized PDF)</a>,
+             <a href="07-08-HOF-CPS-2x3.pdf">(6 up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 7
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP4: Higher-Order Functions and Continuation-Passing Style</a></td>
+    <td>MP3</td>
+
+</tr>
+
+<!-- Day 8 -->
+<tr><td align=right>8</td><th align=right>Sep 18</th>
+  <td>Continuation Passing Style (CPS) Transformation</td>
+  <td> slides continued from Lecture 7
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 8
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA4: CSP Transformation; Working with Mathematical Specifications</a></td>
+  <td>WA3XC (full cr)</td>
+</tr>
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 5 &nbsp;</th></tr>
+
+<!-- Day 9 -->
+<!-- MP5: Polymorphic Type Inference -->
+<tr>
+  <td align=right>9</td><th align=right>Sep 23</th>
+  <td>User Defined Types in Ocaml, Data Constructors and Pattern Matching</td>
+  <td>
+    slides <a href="09-10-usertypes-intro.ppt">(PPT)</a>
+             <a href="09-10-usertypes-intro.pdf">(full sized PDF)</a>,
+             <a href="09-10-usertypes-intro-2x3.pdf">(6 up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 9
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP5: Working with ADTs: Implementing CPS Transformation
+    </a>
+  </td>
+  <td>MP4</td>
+  </tr>
+
+<!-- Day 10 -->
+<tr>
+  <td align=right>10</td><th align=right>Sep 25</th>
+  <td>Recursive Data Types in OCaml</td>
+  <td> slides continued from Lecture 9 </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 10
+    </a>
+  </td>
+  <td>WA4 was given 9/18
+  </td>
+  <td></td>
+</tr>
+
+<tr><td align=right></td><th align=right>9/25-9/27</th>
+ <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          <b>Midterm 1, CBTF</b>
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td>Covers through Leture 7</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 6 &nbsp;</th></tr>
+
+<!-- Day 11 -->
+<!--MP5: Type Inference -->
+<!-- Should have been here by CBTF agreeement
+<tr><td align=right>11</td><th align=right>Sep 30</th>
+ <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          Quiz 2 on MP5
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="background-color:#90A0A0">MP5</td>
+</tr>
+-->
+<tr><td align=right>11</td><th align=right>Sep 30</th>
+  <td>Types and Type Systems </td>
+  <td>
+    slides <a href="11-12-type-systems.ppt">(PPT)</a>
+           <a href="11-12-type-systems.pdf">(full sized PDF)</a>
+           <a href="11-12-type-systems-2x3.pdf">(6 up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 11
+    </a>
+  </td>
+  <td></td>
+  <td style="background-color:#90A0A0"></td>
+</tr>
+
+<!-- Day 12 -->
+<!-- HW1 returned -->
+<tr><td align=right>12</td><th align=right>Oct 2</th>
+  <td>Type Derivation</td>
+  <td> slides continued from Lecture 11 </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 12
+    </a>
+   </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA5: Polymorphic Type Derivation</a>
+  </td>
+  <td>WA4</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 7 &nbsp;</th></tr>
+
+<!-- Day 13 -->
+
+<tr><td align=right>13</td><th align=right>Oct 7</th>
+ <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          Quiz 2 on MP5
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="background-color:#90A0A0">MP5</td>
+</tr>
+<tr><td align=right>13</td><th align=right>Oct 7</th>
+  <td>Monomorphic and Polymorphic Type Derivation</td>
+  <td>
+    slides <a href="13-14-typederiv.pptx">(PPT)</a>
+             <a href="13-14-typederiv.pdf">(full sized PDF)</a>
+             <a href="13-14-typederiv-2x3.pdf">(6 up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 13
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP6: A Unification-Based Type Inferencer</a></td>
+  <td></td> <!-- This is when the quiz should have been. -->
+</tr>
+
+<!-- Day 14 -->
+<tr>
+  <td align=right>14</td><th align=right>Oct 9</th>
+  <td>Polymorphic Type Derivation</td>
+  <td>
+    slides 
+           <a href="15-16-poly-type-infer-unif.pptx">(PPT)</a>
+           <a href="15-16-poly-type-infer-unif.pdf">(full sized PDF)</a>
+           <a href="15-16-poly-type-infer-unif-2x3.pdf">(6 up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 14
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA6: Incremental Unification Algorithm</a>
+  </td>
+  <td>WA5</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 8 &nbsp;</th></tr>
+
+<!-- Day 15 -->
+<!-- MP 5 due, MP6 given -->
+<!-- MP6: Unification -->
+<tr>
+  <td align=right>15</td><th align=right>Oct 14</th>
+  <td>Type Inference</td>
+  <td>
+  slides continued from Lecture 14
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 15
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP7: Unification Algorithm</a></td>
+  <td><!--MP6--></td>
+</tr>
+
+
+<!-- Day 16 -->
+<tr>
+  <td align=right>16</td><th align=right>Oct 16</th>
+  <td><b>Day Off for MT2</b></td>
+  <td></td>
+  <td> <!--
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 16
+    </a> -->
+  </td>
+  <td></td>
+  <td></td>
+</tr>
+<tr><td align=right></td><th align=right>10/16-10/18</th>
+ <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          <b>Midterm 2, CBTF</b>
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td>Covers Lecture 8 - 14</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 9 &nbsp;</th></tr>
+
+<!-- Day 17 -->
+<!-- MP 6 due, MP7 given -->
+<!-- MP7: Lexing, Rec Def Parsing -->
+<tr><td align=right>17</td><th align=right>Oct 21</th>
+  <td>Unification <!--Regular Expressions, OCamllex--></td>
+  <td>
+    slides<a href="17-18-regexp-ocamllex-bnf-grammar.pptx">(PPT)</a>
+             <a href="17-18-regexp-ocamllex-bnf-grammar.pdf">(Full PDF)</a>
+             <a href="17-18-regexp-ocamllex-bnf-grammar-2x3.pdf">(Six Up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 17
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA7: Regular Expressions
+    </a>
+  </td>
+  <td>MP6</td>
+</tr>
+
+<!--Day 18 -->
+<tr><td align=right>18</td><th align=right>Oct 23</th>
+<!-- <td>Recursive Descent Parsing (LL)</td>-->
+<td> Regular Expressions, Right Regular Grammars, OCamllex</td>
+  <td>
+slides continued
+    <!--
+             <a href="18-ocamllex-bnf-grammar.ppt">(PPT)</a>
+             <a href="18-ocamllex-bnf-grammar.pdf">(Full PDF)</a>
+             <a href="18-ocamllex-bnf-grammar-2x3.pdf">(Six Up PDF)</a>
+             -->
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 18
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP8: A Lexer for PicoML</a>
+    <br/>
+  </td>
+  <td>WA6</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 10 &nbsp;</th></tr>
+
+<!-- Day 19 -->
+<!-- MP 7 due, HW2 given -->
+<!-- HW2: Type Derivation, Unification, Regular Expresions, -->
+<!--      Parse Trees and dismbiguating a grammar -->
+<tr><td align=right>19</td><th align=right>Oct 28</th> <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          Quiz 3 on MP7
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="background-color:#90A0A0">MP7</td>
+</tr>
+
+
+<tr><td align=right>19</td><th align=right>Oct 28</th>
+    <td>Ocamllex cont, BNF Grammars, Parsing</td>
+  <td>
+   slides <a href="19-20-parsing-amb-grm.ppt">(PPT)</a>
+          <a href="19-20-parsing-amb-grm.pdf">(PDF)(full sized PDF)</a>
+          <a href="19-20-parsing-amb-grm-2x3.pdf">(6 up PDF)</a>
+          <br/>
+  code <a href="expr.ml">(expr.ml)</a>
+           <a href="exprlex.mll">(exprlex.mll)</a>
+           <a href="exprparse.mly">(exprparse.mly)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 19
+    </a>
+  </td>
+  <td>MP8 was given 10/23</td>
+  <td style="background-color:#90A0A0"></td>
+</tr>
+
+<!-- Day 20 -->
+<tr>
+  <td align=right>20</td><th align=right>Oct 30</th>
+  
+<td>Parse Trees, Ambiguous Grammars, Disambiguating Grammars Part 1, Ocamlyacc</td>
+<!--  <td>Ocamlyacc, Natural Semantics</td> -->
+<!--  <td>LR Parsing</td> -->
+  <td>
+    slides (cont)
+       <!--<a href="20-amb-grm-rec-parse.ppt">(PPT)</a>
+           <a href="20-amb-grm-rec-parse.pdf">(full sized PDF)</a>
+           <a href="20-amb-grm-rec-parse-2x3.pdf">(6 up PDF)</a>-->
+    </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 20
+    </a>
+  </td>
+  <td> 
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA8: Parse Trees
+    </a>
+  </td>
+  <td>WA7</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 11 &nbsp;</th></tr>
+
+<!-- Day 21 -->
+<!-- HW2 due, MP8 given -->
+<!-- MP8: Parsing -->
+
+<tr>
+  <td align=right>21</td><th align=right>Nov 4</th>
+  <td>Disambiguating Grammars</td>
+  <td> <!--
+        <a href="21-lrparsing.ppt">(PPT)</a>
+             <a href="21-lrparsing.pdf">(Full PDF)</a>
+             <a href="21-lrparsing-2x3.pdf">(Six Up PDF)</a>   -->  
+  slides   <a href="21-22-ocamlyacc-amb-grm-lrparsing.pptx">(PPT)</a>
+             <a href="21-22-ocamlyacc-amb-grm-lrparsing.pdf">(Full PDF)</a>
+             <a href="21-22-ocamlyacc-amb-grm-lrparsing-2x3.pdf">(Six
+             Up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 21
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP9: A Parser for PicoML
+    </a>
+  </td>
+  <td>MP8</td>
+</tr>
+
+<!-- Day 22 -->
+<tr>
+  <td align=right>22</td><th align=right>Nov 6</th>
+  <td>
+    Ocamlyacc, LR Parsing
+  </td>
+  <td>
+             slides (cont)
+</td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 22
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA9: Natural and Transition Semantics</a></td>
+  <td>WA8</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 12 &nbsp;</th></tr>
+
+<!--Day 23 -->
+<tr>
+  <td align=right>23</td><th align=right>Nov 11</th>
+  <td>Action and Goto Tables, Natural Semantics</td>
+  <td>
+    slides
+    <a href="24-25-OpSem-NatSem-TransSem.ppt">(PPT)</a>
+    <a href="24-25-OpSem-NatSem-TransSem.pdf">(Full PDF)</a>
+    <a href="24-25-OpSem-NatSem-TransSem-2x3.pdf">(Six Up PDF)
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 23
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP10: An Evaluator for PicoML
+    </a>
+  </td>
+  <td></td>
+</tr>
+
+<!--Day 24 -->
+<tr><td align=right>24</td><th align=right>Nov 13</th>
+<td><b>Day off for MT3</b></td>
+<td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr><td align=right></td><th align=right>11/13-11/15</th>
+ <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          <b>Midterm 3, CBTF</b>
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td>Covers Lecture 15-22</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 13 &nbsp;</th></tr>
+
+<!--Day 25 -->
+<tr>
+  <td align=right>25</td><th align=right>Nov 18</th>
+  <td>Transition Semantics</td>
+  <td> slides continued from Lecture 23<!--  
+slides   <a href="24-lambda-intro.ppt">(PPT)</a>
+             <a href="24-lambda-intro.pdf">(Full PDF)</a>
+             <a href="24-lambda-intro-2x3.pdf">(Six Up PDF)</a>
+-->
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 25
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      MP11: A Transition Semantics Evaluator for CPS
+    </a>
+  </td>
+  <td>MP9</td>
+</tr>
+
+<!-- Day 26 -->
+<tr>
+  <td align=right>26</td><th align=right>Nov 20</th>
+  <td>Intro to Lambda Calculus</td>
+  <td>
+    <!--
+      slides <a href="25-26-lambda.ppt">(PPT)</a>
+             <a href="25-26-lambda.pdf">(Full PDF)</a>
+             <a href="25-26-lambda-2x3.pdf">(Six Up PDF)
+-->
+    slides   <a href="26-27-lambda-intro.pptx">(PPT)</a>
+             <a href="26-27-lambda-intro.pdf">(Full PDF)</a>
+             <a href="26-27-lambda-intro-2x3.pdf">(Six Up PDF)</a>
+
+<!--  <td>Lambda Calculus - Data Representation </td> 
+  <td>
+  slides   <a href="26-lambda-data.ppt">(PPT)</a>
+             <a href="26-lambda-data.pdf">(Full PDF)</a>
+             <a href="26-lambda-data-2x3.pdf">(Six Up PDF)</a>
+
+  </td>
+-->
+<!--  <td>Evaluation in the Lambda Calculus</td>
+  <td> slides   <a href="25-lambda-eval.ppt">(PPT)</a>
+             <a href="25-lambda-eval.pdf">(Full PDF)</a>
+             <a href="25-lambda-eval-2x3.pdf">(Six Up PDF)</a>
+  </td>
+-->
+</td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 26
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA10:Lambda Calculus
+    </a>
+  </td>
+  <td>WA9</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7> Week of Fall Break &nbsp;</th></tr>
+
+
+<!-- TD -->
+<!-- MP8 due, MP9 given -->
+<!-- MP9: Evaluation -->
+<tr>
+  <td align=right></td><th align=right>Nov 25</th>
+  <td><b>Thanksgiving</b></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<!-- TD -->
+<tr>
+  <td align=right></td><th align=right>Nov 27</th>
+  <td><b>Thanksgiving</b></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 14 &nbsp;</th></tr>
+
+<!-- Day 27 -->
+<!-- MP9 due, HW3 given -->
+<!-- HW3: Lambda Calculus -->
+<!--
+<tr><td align=right>27</td><th align=right>Nov 28</th> <td style="background-color:#000000">
+    <table border="0" cellpadding="4" cellspacing="0" width="100%" >
+      <tr>
+        <td style="background-color:#eff">
+          Quiz 5 on MP10
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="background-color:#90A0A0"></td>
+</tr>
+-->
+
+<tr>
+  <td align=right>27</td><th align=right>Dec 2</th>
+<!-- Variables & Binding -->
+<td>Lambda Calculus - Evaluation</td> 
+  <td>
+  slides   <a href="26-lambda-eval.ppt">(PPT)</a>
+             <a href="26-lambda-eval.pdf">(Full PDF)</a>
+             <a href="26-lambda-eval-2x3.pdf">(Six Up PDF)</a>
+
+  </td>
+<!--
+  <td>Intro to Axiomatic Semantics</td>
+  <td>
+  slides   <a href="27-28-HoareLogic.ppt">(PPT)</a>
+             <a href="27-28-HoareLogic.pdf">(Full PDF)</a>
+             <a href="27-28-HoareLogic-2x3.pdf">(Six Up PDF)</a>
+  </td>
+-->
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 27
+    </a>
+  </td>
+  <td>
+    <a href="http://prairielearn.engr.illinois.edu/">
+      WA11: Hoare Logic</a>
+  </td>
+  <td>MP10</td>
+</tr>
+
+<!-- Day 28 -->
+<tr>
+  <td align=right>28</td><th align=right>Dec 4</th>
+<!--
+  <td>Axiomatic Semantics - Example</td>
+  <td>
+   slides <a href="28-HoareLogicExamples.ppt"> (PPT)
+    </a> <a href="28-HoareLogicExamples.pdf"> (Full PDF) </a>
+             <a href="28-HoareLogicExamples-2x3.pdf">(Six Up PDF)</a>
+
+  </td>
+<td>Lambda Calculus - Data Representation </td> 
+  <td>
+  slides   <a href="26-lambda-data.ppt">(PPT)</a>
+             <a href="26-lambda-data.pdf">(Full PDF)</a>
+             <a href="26-lambda-data-2x3.pdf">(Six Up PDF)</a>
+
+  </td>
+-->
+  <td>Intro to Axiomatic Semantics</td>
+  <td>slides:
+    <a href="27-28-HoareLogic.pptx">(PPT)</a>
+    <a href="27-28-HoareLogic.pdf">(Full PDF)</a>
+    <a href="27-28-HoareLogic-2x3.pdf">(Six Up PDF)</a><br>
+    extra slides:
+    <a href="28-HoareLogicExamples.ppt"> (PPT) </a>
+    <a href="28-HoareLogicExamples.pdf"> (Full PDF) </a>
+    <a href="28-HoareLogicExamples-2x3.pdf">(Six Up PDF)</a>
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 28
+    </a>
+  </td>
+  <td></td>
+  <td>WA10</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7>Week 15 &nbsp;</th></tr>
+
+<!--Day 29 -->
+<!-- HW3 due -->
+<tr><td align=right>29</td><th align=right>Dec 9</th>
+  <td>Hoare Logic (cont)</td>
+  <td> <!--
+    slides <a href="10-lambda-intro.ppt">(PPT)</a>
+             <a href="10-lambda-intro.pdf">(full sized PDF)</a>
+             <a href="10-lambda-intro-2x3.pdf">(6 up PDF)</a>
+    notes <a href ="notes/26-LambdaCalc-0402.pdf">(PDF notes)</a> -->
+  </td>
+  <td>
+    <a href='https://mediaspace.illinois.edu/channel/Progrmg%2BLanguages%2B%2526%2BCompilers%2BFall%2B2026/386455652'>
+      Lect 29
+    </a>
+  </td>
+  <td></td>
+  <td>MP11</td>
+</tr>
+<!--
+<tr style="background-color:#E0F0F0"><th colspan=7> &nbsp;</th></tr>
+-->
+<tr><th colspan=7> End of Classes &nbsp;</th></tr>
+<tr><td align=right></td><th align=right>Dec 10</th>
+  <td>Last day of classes</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>WA11, WA3XC (late, max 80%)</td>
+</tr>
+
+<tr style="background-color:#E0F0F0"><th colspan=7> Finals Week &nbsp;</th></tr>
+<!-- 1:30pm-4:30pm., Monday Dec. 14. -->
+<tr><td align=right></td><th align=right>Dec 14</th>
+<td><b>FINAL</b> (1:30pm-4:30pm)</td>
+  <td>Cummulative, with more weight on the last third</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+    </table>
+
+    </td>
+  
+  <td></td>
+</tr>
+</table>
+<p>
+
+</td>
+
+    
+  <td></td>
+</tr>
+  </table>
+
+</body>
+</html>
