@@ -1,0 +1,149 @@
+BODY {
+    background: #eff;
+    color: #000;
+    font-family: "times new roman",serif;
+    /* font-size: 12pt; */
+    margin: 1ex;
+}
+
+A {
+    text-decoration: none;
+    color: #55a;
+}
+
+A:hover {
+    text-decoration: underline;
+    color: #00a;
+}
+
+TABLE {
+    /*font-size: 12pt;*/
+}
+
+TABLE.title {
+    border-color: #bcc;
+    border-style: solid;
+    border-width: 2px;
+}
+
+TABLE.module {
+    border-color: #bcc;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+HR {
+    border-color: #bcc;
+    border-style: dotted;
+}
+
+TH.module_title {
+    background: #dee;
+    color: #466;
+    font-weight: bold;
+    text-align: left;
+}
+
+TH.schedule_title {
+    background: #dee;
+    color: #466;
+    font-weight: bold;
+}
+
+TD.schedule_exam {
+    background: #fee;
+    color: #8f0000;
+    font-weight: bold;
+}
+
+TD.title {
+    padding: 1ex;
+}
+
+TD.nav {
+    background: #dee;
+    color: #222;
+    font-weight: bold;
+    /*font-size: 12pt;*/
+}
+
+BIG.title {
+    font-size: 200%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+TABLE.index {
+    font-size: 80%;
+    border-color: #bcc;
+    border-style: dashed;
+    border-width: 0px;
+}
+
+.schedule {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcc;
+    font-family: sans-serif;
+    font-size: 80%;
+}
+
+.lines {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcc;
+    font-family: sans-serif;
+    font-size: 80%;
+}
+
+SMALL {
+    font-size: 80%;
+}
+
+DT {
+    font-weight: bold;
+}
+
+DD {
+    margin-bottom: 1ex;
+    margin-left: 2ex;
+}
+
+PRE {
+    font-size: 80%;
+}
+
+LI {
+    padding-top: 0.25ex;
+    padding-bottom: 0.25ex;
+}
+
+PRE.code {
+    background: #fff;
+    color: #000;
+    padding: 1ex;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #bcc;
+}
+
+SUB {
+    font-size: 70%;
+}
+SUP {
+    font-size: 70%;
+}
+
+.inlineCode {
+    background-color:#CCC;
+    padding: 3px 5px;
+    font-family:monospace;
+}
+
+.blockCode {
+    font-family:monospace;
+    background-color:#CCC;
+    color: #000080;
+    padding:5px;
+}
+
